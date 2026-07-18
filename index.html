@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Front-End Developer</title>
+<meta name="description" content="Front-end developer portfolio — math teacher turned coding educator, building for the web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">yourname<span class="cursor-dot">.</span>dev</a>
+    <nav class="nav-links">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO: styled as a code editor window -->
+  <section class="hero">
+    <div class="editor-window">
+      <div class="editor-titlebar">
+        <div class="editor-dots"><span></span><span></span><span></span></div>
+        <div class="editor-tabs">
+          <span class="tab active">about-me.js</span>
+          <span class="tab">career.md</span>
+        </div>
+      </div>
+      <div class="editor-body">
+        <pre class="editor-code"><code><span class="ln">01</span><span class="c">// hi, I'm <span class="str">Your Name</span></span>
+<span class="ln">02</span><span class="c">// math teacher since <span class="num">2018</span></span>
+<span class="ln">03</span><span class="c">// now building things for the web</span>
+<span class="ln">04</span>
+<span class="ln">05</span><span class="kw">const</span> <span class="var">focus</span> <span class="op">=</span> [
+<span class="ln">06</span>  <span class="str">"front-end development"</span>,
+<span class="ln">07</span>  <span class="str">"coding education"</span>,
+<span class="ln">08</span>  <span class="str">"making hard ideas click"</span>
+<span class="ln">09</span>];
+<span class="ln">10</span>
+<span class="ln">11</span><span class="kw">export default</span> <span class="var">focus</span><span class="op">.</span><span class="fn">map</span>(<span class="var">idea</span> <span class="op">=></span> build(<span class="var">idea</span>))<span class="cursor-blink">|</span></code></pre>
+      </div>
+    </div>
+    <p class="hero-caption">Scroll down — the rest isn't commented out.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-head">
+      <span class="eyebrow">// about</span>
+      <h2>From the classroom to the console</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I've spent time since 2018 teaching math — breaking down ideas that look intimidating on paper until they're not. Somewhere along the way I started doing the same thing with code: turning "how does this even work" into "oh, that's it?"</p>
+        <p>Now I'm building front-end projects and coding curriculum, mostly landing somewhere in between: I like tools that teach, and lessons that feel like tools.</p>
+        <p>I'm based in Egypt, working with teams remotely, most recently exploring coding and Scratch instruction with a UK-based team.</p>
+      </div>
+      <div class="about-stack">
+        <div class="stat-line">
+          <span class="stat-label">teaching since</span>
+          <span class="stat-value">2018</span>
+        </div>
+        <div class="stat-line">
+          <span class="stat-label">based in</span>
+          <span class="stat-value">Egypt</span>
+        </div>
+        <div class="stat-line">
+          <span class="stat-label">currently</span>
+          <span class="stat-value">coding + Scratch instruction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="section-head">
+      <span class="eyebrow">// projects</span>
+      <h2>portfolio/projects/</h2>
+    </div>
+
+    <div class="project-list">
+
+      <article class="project-card">
+        <div class="project-file">block-coding-demo.jsx</div>
+        <h3>Mini Block-Coding Playground</h3>
+        <p>A drag-and-drop block interface — move, repeat, if/else — that drives a character around a canvas. Built to bridge teaching logic and React state management.</p>
+        <div class="project-tags"><span>React</span><span>Canvas</span><span>Education</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link">live demo →</a>
+          <a href="#" class="project-link ghost">source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-file">math-visualizer.js</div>
+        <h3>Interactive Math Visualizer</h3>
+        <p>Sliders and visual feedback for a concept students usually only see written down — fractions, angles, or ratios made draggable.</p>
+        <div class="project-tags"><span>JavaScript</span><span>SVG</span><span>Education</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link">live demo →</a>
+          <a href="#" class="project-link ghost">source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-file">quiz-app.js</div>
+        <h3>Quiz &amp; Flashcard App</h3>
+        <p>A clean, fast quiz tool for coding or math basics — built to show fundamentals: state, DOM handling, and no framework overhead.</p>
+        <div class="project-tags"><span>HTML/CSS/JS</span><span>LocalStorage</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link">live demo →</a>
+          <a href="#" class="project-link ghost">source →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="section-head">
+      <span class="eyebrow">// skills</span>
+      <h2>import { skills } from "./experience"</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <ul><li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Frameworks</h4>
+        <ul><li>React</li><li>Responsive / mobile-first design</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Tools</h4>
+        <ul><li>Git &amp; GitHub</li><li>VS Code</li><li>Figma (basics)</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Also bring</h4>
+        <ul><li>7+ years teaching math</li><li>Curriculum &amp; lesson design</li><li>Explaining complex ideas simply</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <span class="eyebrow">// contact</span>
+      <h2>Let's build something.</h2>
+      <p>Open to front-end roles and coding-education work.</p>
+      <div class="contact-links">
+        <a href="mailto:you@example.com" class="contact-link">you@example.com</a>
+        <a href="#" class="contact-link">GitHub</a>
+        <a href="#" class="contact-link">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Your Name — built with HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
